@@ -38,7 +38,7 @@ public class main {
 		String fword = word.toLowerCase().replaceAll("[',.-]", "");
 			
 			
-		System.out.println(fword);	
+		//System.out.println(fword);	
 			
 			
 		String[] letters = new String[fword.length()];
@@ -53,7 +53,7 @@ public class main {
 			for (int i = 0; i < fword.length(); i++) 
 			{ 
 				System.out.print(letters[i]);
-				System.out.print(secretWord[i]);
+				//System.out.print(secretWord[i]);
 			}	
 	int incorrect = 0;		
 	String[] newOrder = new String[fword.length()];
