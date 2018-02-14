@@ -2,9 +2,10 @@
 public class Letters {
 
 	public static void main(String[] args) {
-		String MSG = "I am going to London";
+		String MSG = " I am going to London ";
 		
-		String w = MSG.substring(2,3);
+		String from = "London";
+		String to = "Manchester";
 		
 		//stringProcessing(MSG);
 		
@@ -12,9 +13,10 @@ public class Letters {
 		
 		//print(MSG);
 		
-		printBack(MSG);
+		//printBack(MSG);
+		
+		replaceString(MSG,from,to);
 	}
-
 	
 	public static void stringProcessing(String MSG)
 	{
@@ -45,8 +47,7 @@ public class Letters {
 	public static void print(String MSG)
 	{
 		 String space = " ";
-		 int words = 1;
-		 
+				 
 		 for (int i = 0; i < MSG.length(); i++)
 		 {			 
 			 if (MSG.substring(i,i+1).equals(space))
@@ -64,20 +65,56 @@ public class Letters {
 	public static void printBack(String MSG)
 	{
 		 String space = " ";
-		 int words = 0 ;
+		 String sub = "";
 		 
-		 int startOfWord = 0;
-		 
-		 for (int i = MSG.length(); i >0; i--)
-		 {			 
+		 for (int i = MSG.length(); i > 0; i--)
+		 {			
+			 sub = (MSG.substring(i-1,i)+ sub);
+			 
 			 if (MSG.substring(i-1,i).equals(space))
 			 {
-				 System.out.println("");
-				 startOfWord = i+1;
-			}
-			 System.out.print(MSG.substring(i,startOfWord));
-
+				 System.out.println(sub);
+				 sub = "";
+			 }				 
 		 }
 	}
 
+	public static void replaceString (String MSG, String from, String to)
+	{
+		String[] arr = MSG.split(from);
+		StringBuilder output = new StringBuilder();
+		
+		for (int i = 0; i<MSG.length();i++)
+		{
+			output.append(arr[i]).append(to);
+			
+			
+		}
+	}
 }
+	
+	
+   /* public static void main(String[] args)
+    {
+        String originalString = "This car is my car";
+        String replacedString = replaceMethod(originalString, "car", "bike");
+        System.out.println(replacedString);
+    }
+
+    static String replaceMethod(String str, String from, String to) 
+    {
+        String[] arr = str.split(from);
+        StringBuilder output = new StringBuilder();
+
+        int i = 0;
+        for (; i < arr.length - 1; i++)
+        output.append(arr[i]).append(to);
+
+        output.append(arr[i]);
+        if (str.substring(str.lastIndexOf(" ")).equalsIgnoreCase(" " + from))
+            output.append(to);
+
+        return output.toString();
+    }
+} */
+
