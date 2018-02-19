@@ -19,7 +19,5 @@ public class Add extends Calculator implements ActionListener {
 			         Box1.setText("");
 			         
 			         add=true;
-			         
-			         System.out.println(add);
 		}
 }

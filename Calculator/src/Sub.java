@@ -19,7 +19,5 @@ public class Sub extends Calculator implements ActionListener {
 			         Box1.setText("");
 			         
 			         sub=true;
-			         
-			         System.out.println(sub);
 		}
 }

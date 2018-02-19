@@ -1,24 +1,21 @@
 import java.util.ArrayList;
 
-static ArrayList<Vehicle> Vehicles = new ArrayList<>();
-
 public class Garage {
 
+	static ArrayList<Vehicle> Vehicles = new ArrayList<>();
 		
 		public int age;
-		public String brand
+		public String brand;
 		
-		public Vehicle(int age, String brand) 
+		public void Vehicle(int age, String brand) 
 		{
-			this.age = Age;
-			this.brand = Brand;
+			this.age = age;
+			this.brand = brand;
 		}
 	
 	
-	}
-	
-	public static int 
-
 }
 
-Person p = new Person("Jeff",37,"Lead Developer");
+
+
+//Person p = new Person("Jeff",37,"Lead Developer");

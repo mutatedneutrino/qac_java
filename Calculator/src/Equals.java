@@ -17,9 +17,6 @@ public class Equals extends Calculator implements ActionListener {
 
 		public void actionPerformed(ActionEvent x) 
 		{			
-					System.out.println("");
-					System.out.println(sub);
-					System.out.println(add);
 					 int dave = Integer.parseInt(Box1.getText());
 					 if (add)
 					 {

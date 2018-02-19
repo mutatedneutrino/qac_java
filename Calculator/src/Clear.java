@@ -2,11 +2,9 @@
 	import java.awt.event.ActionEvent;
 	import java.awt.event.ActionListener;
 
-public class Clear implements ActionListener {
+public class Clear extends Calculator implements ActionListener {
 
 		TextField Box1;
-		boolean add;
-		boolean sub;
 		
 		public Clear(TextField T1, boolean sub, boolean add)
 		{
@@ -18,6 +16,8 @@ public class Clear implements ActionListener {
 			         Box1.setText("");	
 			         add = false;
 			         sub = false;
+			         mul = false;
+			         div = false;
 			         
 		}
 }

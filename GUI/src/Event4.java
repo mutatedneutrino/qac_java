@@ -3,7 +3,7 @@
 	import java.awt.event.ActionEvent;
 	import java.awt.event.ActionListener;
 
-public class Event4 impl{
+public class Event4 implements ActionListener {
 
 		TextField Box1;
 		TextField Box2;

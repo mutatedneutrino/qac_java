@@ -5,7 +5,7 @@ public class Boat extends Vehicle{
 			String bMake;
 		}
 		
-		public int age() 
+		public void age() 
 		{
 			int bAge;
 		}
